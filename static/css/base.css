@@ -91,6 +91,22 @@ header {
     box-shadow: var(--smal-box-shadow);
     border-radius: 5px;
 }
+
+/* Recipe Page Styles */
+.card {
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.recipes{
+    text-decoration: none;
+    color: var(--black);
+}
+.recipes:hover{
+    cursor:pointer;
+}
+
+
 /* Footer */
 .social-widget {
     text-align: center; /* Center align text and icons */
