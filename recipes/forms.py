@@ -30,9 +30,9 @@ class RecipeForm(forms.ModelForm):
         labels = {
             "title": "Recipe Title",
             "description": "Description",
-            "ingredients": "Recipe Ingredients",
-            "instructions": "Recipe Instructions",
-            "image": "Recipe Image",
+            "ingredients": "Ingredients",
+            "instructions": "Instructions",
+            "image": "Image",
             "image_alt": "Describe Image",
             "cake_type": "Cake Type",
             "flavor": "Flavor",
