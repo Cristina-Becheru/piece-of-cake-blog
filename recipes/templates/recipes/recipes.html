@@ -10,7 +10,7 @@
     <div class="row g-3">
         {% for recipe in recipes %}
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a href="" class="recipes text-decoration-none" aria-label="Click to view {{ recipe.title }}">
+            <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
                 <div class="card">
                     <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ recipe.image_alt }}">
                     <div class="card-body">

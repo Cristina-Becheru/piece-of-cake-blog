@@ -32,7 +32,7 @@ class Recipe(models.Model):
     description = models.CharField(max_length=500, null=False, blank=False)
     ingredients = RichTextField(max_length=10000, null=False, blank=False)
     instructions = RichTextField(max_length=10000, null=False, blank=False)
-    
+
     image = ResizedImageField(
         size=[400, None],
         quality=75,
@@ -40,13 +40,16 @@ class Recipe(models.Model):
         force_format="WEBP",
         blank=False,
         null=False,
-    ) 
+    )
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     cake_type = models.CharField(max_length=50, choices=CAKE_TYPES, default="classic")
     flavor = models.CharField(max_length=50, choices=FLAVOR_TYPES, default="vanilla")
     calories = models.PositiveIntegerField(null=True, blank=True)
+    prep_time = models.CharField(max_length=50, null=True, blank=True)
+    cook_time = models.CharField(max_length=50, null=True, blank=True)
+    servings = models.PositiveIntegerField(null=True, blank=True)
     posted_date = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         ordering = ["-posted_date"]
 

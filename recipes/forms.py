@@ -19,7 +19,7 @@ class RecipeForm(forms.ModelForm):
             "flavor",
             "calories",
         ]
-        
+
         ingredients = forms.CharField(widget=RichTextWidget())
         instructions = forms.CharField(widget=RichTextWidget())
 
