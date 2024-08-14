@@ -268,6 +268,114 @@ header {
     border-color: var(--pink); 
 }
 
+/* Base styles for home page */
+
+.intro-section p {
+    font-size: 1.25rem; 
+    line-height: 1.6; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+}
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black); 
+}
+
+.recipe-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.img-container {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(20% - 1.5rem); 
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+#id_password_helptext{
+    visibility: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 105, 180, 0.7); 
+    padding: 0.5rem;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .text-overlay {
+    opacity: 1;
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+/* Responsive Styles for Image Containers Home page */
+
+@media (max-width: 1200px) {
+    .img-container {
+        width: calc(30% - 1.5rem);  
+    }
+}
+
+@media (max-width: 992px) {
+    .img-container {
+        width: calc(45% - 1.5rem); 
+    }
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        width: calc(45% - 1.5rem); 
+    }
+}
+
+@media (max-width: 576px) {
+    .img-container {
+        width: calc(100% - 1.5rem); 
+    }
+    .text-overlay {
+        padding: 0.5rem; 
+        font-size: 0.875rem;  
+        border-radius: 4px;
+    }
+
+    .text-overlay h2 {
+        font-size: 1rem; 
+    }
+}
+
 /* Responsive Styles for Recipe Page */
 
 @media (max-width: 1200px) {
