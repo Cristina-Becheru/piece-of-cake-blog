@@ -231,3 +231,142 @@ header {
     padding: 10px;
     background-color: #f9f9f9;
 }
+.comment-container {
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: var(--light-pink); 
+    text-align: center;
+}
+
+.comment-content {
+    word-wrap: break-word; 
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.comment-rating {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.fa-star {
+    color: #ffc107; 
+    font-size: 1.2em; 
+}
+
+.comment-user,
+.comment-date {
+    font-size: 1.1em; 
+    color: #555; 
+    margin-top: 5px; 
+}
+.btn-dark:hover {
+    background-color: var(--pink);
+    border-color: var(--pink); 
+}
+
+/* Responsive Styles for Recipe Page */
+
+@media (max-width: 1200px) {
+    .recipe-card {
+        max-width: 350px; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+    }
+}
+
+@media (max-width: 992px) {
+    .recipe-card {
+        max-width: 300px; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        max-width: 100%; 
+    }
+
+    .ingredients, .instructions, .comment-container {
+        padding: 8px; 
+    }
+
+    .comment-content {
+        font-size: 1em; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+}
+}
+@media (max-width: 576px) {
+    .recipe-info {
+        padding: 10px; 
+    }
+
+    .recipe-pic {
+        margin-bottom: 10px; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6);
+}
+}
+/* Responsive Styles for Add recipes and sign up page*/
+@media (max-width: 992px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-header {
+        padding: 8px 15px; 
+    }
+
+    .btn-primary {
+        padding: 8px 15px; /
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px; 
+    }
+
+    .card {
+        margin-bottom: 15px; 
+    }
+
+    .card-header {
+        padding: 6px 10px; 
+    }
+
+    .btn-primary {
+        padding: 6px 10px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-top: 5px; 
+    }
+
+    .card {
+        margin-bottom: 10px; 
+    }
+
+    .card-header {
+        padding: 5px 8px; 
+    }
+
+    .btn-primary {
+        padding: 5px 8px; 
+    }
+}
