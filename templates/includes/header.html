@@ -1,0 +1,54 @@
+{% load static %} 
+
+{% with request.resolver_match.url_name as url_name %}  
+
+<nav class="navbar navbar-expand-lg bg-dark">  
+    <div class="container-fluid">  
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/logo.webp' %}" alt="Piece-of-Cake" class="logo">  
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCakes" aria-controls="navbarCakes" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="navbarCakes">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {% if url_name == 'home' %}{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="">Add Recipes</a>
+                </li>
+                <!-- User authentication links -->
+                {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if url_name == 'profile' %}{% endif %}" href="{% url 'profile' request.user.id %}">Profile</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if url_name == 'accounts_logout' %}{% endif %}" href="/accounts/logout/">Logout</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if url_name == 'accounts_signup' %}{% endif %}" href="/accounts/signup/">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if url_name == 'accounts_login' %}{% endif %}" href="/accounts/login/">Login</a>
+                    </li>
+                {% endif %}
+            </ul>
+
+            <!-- Search form -->
+            <form class="d-flex search-bar" role="search" method="GET" action="#">
+                <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">  
+                <button type="submit" class="btn btn-warning">Search</button>  
+            </form>
+        </div>
+    </div>
+</nav>
+
+{% endwith %}
