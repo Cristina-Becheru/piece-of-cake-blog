@@ -110,5 +110,18 @@ header {
 .navbar-toggler {
     background-color: var(--white); 
 }
+/* Form */
 
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--small-box-shadow);
+    border-radius: 5px;
+}
+
+/* Login/Signup container styling */
+
+.container {
+    margin-top: 20px;
+}
 
