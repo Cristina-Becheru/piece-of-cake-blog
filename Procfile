@@ -1,1 +1,1 @@
-web: gunicorn pieceofcakeapp.wsgi
+web: gunicorn pieceofcake.wsgi
