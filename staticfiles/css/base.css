@@ -174,3 +174,307 @@ header {
     color: var(--black);
     text-decoration: underline;
 }
+
+/* Recipe Page Styles */
+.recipe-card {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto 30px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+}
+
+.recipe-link {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.recipe-link:hover {
+    cursor: pointer;
+    
+}
+
+.recipe-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.recipe-img {
+    text-align: center;
+}
+
+.recipe-pic {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.recipe-detail {
+    margin-top: 20px;
+}
+
+.recipe-container {
+    margin-top: 10px;
+}
+
+.ingredients, .instructions {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.comment-container {
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: var(--light-pink); 
+    text-align: center;
+}
+
+.comment-content {
+    word-wrap: break-word; 
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.comment-rating {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.fa-star {
+    color: #ffc107; 
+    font-size: 1.2em; 
+}
+
+.comment-user,
+.comment-date {
+    font-size: 1.1em; 
+    color: #555; 
+    margin-top: 5px; 
+}
+.btn-dark:hover {
+    background-color: var(--pink);
+    border-color: var(--pink); 
+}
+
+/* Base styles for home page */
+
+.intro-section p {
+    font-size: 1.25rem; 
+    line-height: 1.6; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+}
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black); 
+}
+
+.recipe-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.img-container {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(20% - 1.5rem); 
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+#id_password_helptext{
+    visibility: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 105, 180, 0.7); 
+    padding: 0.5rem;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .text-overlay {
+    opacity: 1;
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+/* Responsive Styles for Image Containers Home page */
+
+@media (max-width: 1200px) {
+    .img-container {
+        width: calc(30% - 1.5rem);  
+    }
+}
+
+@media (max-width: 992px) {
+    .img-container {
+        width: calc(45% - 1.5rem); 
+    }
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        width: calc(45% - 1.5rem); 
+    }
+}
+
+@media (max-width: 576px) {
+    .img-container {
+        width: calc(100% - 1.5rem); 
+    }
+    .text-overlay {
+        padding: 0.5rem; 
+        font-size: 0.875rem;  
+        border-radius: 4px;
+    }
+
+    .text-overlay h2 {
+        font-size: 1rem; 
+    }
+}
+
+/* Responsive Styles for Recipe Page */
+
+@media (max-width: 1200px) {
+    .recipe-card {
+        max-width: 350px; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+    }
+}
+
+@media (max-width: 992px) {
+    .recipe-card {
+        max-width: 300px; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        max-width: 100%; 
+    }
+
+    .ingredients, .instructions, .comment-container {
+        padding: 8px; 
+    }
+
+    .comment-content {
+        font-size: 1em; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6); 
+}
+}
+@media (max-width: 576px) {
+    .recipe-info {
+        padding: 10px; 
+    }
+
+    .recipe-pic {
+        margin-bottom: 10px; 
+    }
+
+    .recipe-card:hover {
+        box-shadow: 0 10px 15px rgba(255, 105, 180, 0.6);
+}
+}
+/* Responsive Styles for Add recipes and sign up page*/
+@media (max-width: 992px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-header {
+        padding: 8px 15px; 
+    }
+
+    .btn-primary {
+        padding: 8px 15px; /
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px; 
+    }
+
+    .card {
+        margin-bottom: 15px; 
+    }
+
+    .card-header {
+        padding: 6px 10px; 
+    }
+
+    .btn-primary {
+        padding: 6px 10px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-top: 5px; 
+    }
+
+    .card {
+        margin-bottom: 10px; 
+    }
+
+    .card-header {
+        padding: 5px 8px; 
+    }
+
+    .btn-primary {
+        padding: 5px 8px; 
+    }
+}
