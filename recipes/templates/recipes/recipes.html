@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Recipes{% endblock %}
+
+{% block content %}
+<h1 class="text-center p-2 d-block">
+    Latest Recipes
+</h1>
+
+<div class="text-center mb-4"> 
+    <form method="get" action="{% url 'recipes' %}" class="d-inline-block"> 
+        <div class="row justify-content-center">  
+            <div class="col-md-5 mb-3">
+                <select name="cake_type" class="form-select" aria-label="Filter recipes by cake type">
+                    <option value="">All Cake Types</option>
+                    {% for key, value in cake_types.items %}
+                        <option value="{{ key }}" {% if request.GET.cake_type == key %}selected{% endif %}>
+                            {{ value }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-5 mb-3">
+                <select name="flavor" class="form-select" aria-label="Filter recipes by flavor">
+                    <option value="">All Flavors</option>
+                    {% for key, value in flavor_types.items %}
+                        <option value="{{ key }}" {% if request.GET.flavor == key %}selected{% endif %}>
+                            {{ value }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+        <div class="col-md-12 text-center mt-3">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </div>
+</form>
+
+<!-- Recipes Grid -->
+<div class="container">
+    <div class="row g-3">
+        {% for recipe in recipes %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="" class="recipe-link" aria-label="Click to view {{ recipe.title }}">
+                <div class="recipe-card">
+                    <div class="recipe-img">
+                        <img src="{{ recipe.image.url }}" class="recipe-pic" alt="{{ recipe.image_alt }}">
+                    </div>
+                    <div class="recipe-info">
+                        <h2 class="card-title">{{ recipe.title }}</h2>
+                        <p class="card-text">{{ recipe.description|truncatechars:100 }}</p>
+                        <a href="" class="btn btn-dark">View Recipe</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% empty %}
+        <p>No recipes found.</p>
+        {% endfor %}
+    </div>
+</div>
+<!-- Pagination Controls -->
+{% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <!-- Previous/Next Button -->
+            <li class="page-item {% if not page_obj.has_previous and not page_obj.has_next %}disabled{% endif %}">
+                <a class="btn btn-dark"  
+                   href="{% if page_obj.has_next %}
+                         ?{% if request.GET.cake_type %}cake_type={{ request.GET.cake_type }}&{% endif %}{% if request.GET.flavor %}flavor={{ request.GET.flavor }}&{% endif %}page={{ page_obj.next_page_number }}
+                         {% else %}
+                         ?{% if request.GET.cake_type %}cake_type={{ request.GET.cake_type }}&{% endif %}{% if request.GET.flavor %}flavor={{ request.GET.flavor }}&{% endif %}page={{ page_obj.previous_page_number }}
+                         {% endif %}" 
+                   aria-label="{% if page_obj.has_next %}Next{% else %}Previous{% endif %}">
+                    <span class="arrow" aria-hidden="true">{% if page_obj.has_next %}&raquo;{% else %}&laquo;{% endif %}</span>
+                    <span class="button-text">
+                        {% if page_obj.has_next %}Next{% else %}Previous{% endif %}
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+{% endif %}
+{% endblock %}

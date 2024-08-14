@@ -19,7 +19,7 @@
                     <a class="nav-link {% if url_name == 'home' %}{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Recipes</a>
+                    <a class="nav-link {% if url_name == 'recipes' %}{% endif %}" href="{% url 'recipes' %}">Recipes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if url_name == 'add_recipe' %}{% endif %}" href="{% url 'add_recipe' %}">Add Recipes</a>
