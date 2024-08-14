@@ -124,4 +124,53 @@ header {
 .container {
     margin-top: 20px;
 }
+/* Card Styling */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
 
+.card-header {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.card-body a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: var(--white);
+    box-shadow: none;
+}
+
+.btn-link {
+    color: var(--pink);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    color: var(--black);
+    text-decoration: underline;
+}

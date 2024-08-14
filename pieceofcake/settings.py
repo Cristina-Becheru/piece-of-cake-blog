@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     
     'pieceofcakeapp',
+    'recipes',
+    
     
     
      # Other
