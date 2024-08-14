@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mr+Bedfort&display=swap');
+
+:root {
+    /* Fonts */
+    --title: 'Mr Bedfort', cursive;
+    --main-font: 'Dancing Script', cursive;
+
+    /* Colors */
+    --black: #333; 
+    --white: #fff;
+    --orange: #ffbf50; 
+    --pink: #ff69b4; 
+    --light-pink: #ffdce2; 
+    --border-color: #ddd; 
+    --background-color: #f9f9f9;
+
+    /* Box Shadows */
+    --small-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    --border: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* Basic Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    min-height: 100vh;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+    color: var(--black); 
+
+}
+/* Main Content Area */
+main {
+    flex: 1 0 auto;
+    background-color: var(--white);
+    padding: 20px;
+}
+/* Footer */
+
+.social-widget {
+    text-align: center; 
+}
+.social-link {
+    color: var(--white);
+    text-decoration: none; 
+    padding: 5px; 
+    margin: 0 5px; 
+    transition: color 0.3s ease; 
+    display: inline-flex; 
+    align-items: center; 
+}
+
+.social-link:hover {
+    color: var(--orange);
+}
+
+.social-link i {
+    font-size: 24px; 
+    margin-right: 5px; 
+}
+
+/* Header styles */
+header {
+    padding: 5px 10px; 
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    box-shadow: var(--small-box-shadow);
+    font-size: 18px; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+}
+
+/* Navbar link styles */
+
+.nav-link {
+    color: var(--white); 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--orange);
+    color: var(--white);
+    outline: none;
+}
+
+/* Logo styles */
+.logo {
+    max-width: 110px; 
+    height: auto;
+}
+
+/* Collapse button styles */
+.navbar-toggler {
+    background-color: var(--white); 
+}
+/* Form */
+
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--small-box-shadow);
+    border-radius: 5px;
+}
+
+/* Login/Signup container styling */
+
+.container {
+    margin-top: 20px;
+}
+
