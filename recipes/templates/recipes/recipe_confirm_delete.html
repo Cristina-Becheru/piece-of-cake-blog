@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Delete Recipe Confirmation{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mt-4">Delete Recipe</h1>
+    <div class="d-flex flex-column align-items-center pt-4">
+        <form method="post" class="text-center">
+            {% csrf_token %}
+            <p class="mb-3">Are you certain you want to remove the recipe "{{ object.title }}" from the list?</p>
+            <button type="submit" class="btn btn-danger w-25 mb-2">Delete</button>
+            <a href="{% url 'recipe_detail' object.id %}" class="btn btn-secondary w-25 mb-2">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

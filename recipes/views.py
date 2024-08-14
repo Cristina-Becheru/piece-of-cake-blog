@@ -108,6 +108,27 @@ class AddRecipe(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
         return super().form_valid(form)
 
+class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """Edit a recipe"""
+
+    template_name = 'recipes/edit_recipe.html'
+    model = Recipe
+    form_class = RecipeForm
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+    def get_success_url(self):
+        return reverse_lazy('recipe_detail', kwargs={'pk': self.object.pk})
+class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a recipe"""
+
+    model = Recipe
+    success_url = '/recipes/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
 @login_required
 def edit_comment(request, pk):
     """Edit a comment"""
