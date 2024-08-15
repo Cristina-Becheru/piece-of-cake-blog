@@ -1,10 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
-
+from cloudinary_storage.storage import MediaCloudinaryStorage
 from djrichtextfield.models import RichTextField
 from django_resized import ResizedImageField
-
 
 CAKE_TYPES = [
     ("classic", "Classic"),
@@ -20,7 +19,6 @@ FLAVOR_TYPES = [
     ("lemon", "Lemon"),
     ("coffee", "Coffee"),
 ]
-
 
 class Recipe(models.Model):
     """
@@ -42,6 +40,7 @@ class Recipe(models.Model):
         force_format="WEBP",
         blank=False,
         null=False,
+        storage=MediaCloudinaryStorage(),
     )
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     cake_type = models.CharField(max_length=50, choices=CAKE_TYPES, default="classic")
@@ -51,6 +50,7 @@ class Recipe(models.Model):
     cook_time = models.CharField(max_length=50, null=True, blank=True)
     servings = models.PositiveIntegerField()
     posted_date = models.DateTimeField(auto_now_add=True)
+
 
     class Meta:
         ordering = ["-posted_date"]
