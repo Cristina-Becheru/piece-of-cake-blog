@@ -185,6 +185,7 @@ header {
     transition: box-shadow 0.3s ease;
     overflow: hidden; 
     box-sizing: border-box;
+    
 }
 
 .recipe-card:hover {
@@ -308,7 +309,8 @@ header {
 
 .img-container img {
     width: 100%;
-    height: auto;
+    height: 100%; 
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
     justify-content: center;
