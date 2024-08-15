@@ -35,7 +35,6 @@
         </div>
     </div>
 </form>
-
 <!-- Recipes Grid -->
 <div class="container">
     <div class="row g-3">
@@ -65,7 +64,7 @@
         <ul class="pagination justify-content-center">
             <!-- Previous Button -->
             <li class="page-item {% if not page_obj.has_previous %}disabled{% endif %}">
-                <a class="btn btn-dark"  
+                <a class="btn btn-dark" 
                    href="{% if page_obj.has_previous %}
                          ?{% if request.GET.cake_type %}cake_type={{ request.GET.cake_type }}&{% endif %}{% if request.GET.flavor %}flavor={{ request.GET.flavor }}&{% endif %}page={{ page_obj.previous_page_number }}
                          {% else %}
@@ -78,7 +77,7 @@
 
             <!-- Next Button -->
             <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
-                <a class="btn btn-dark"  
+                <a class="btn btn-dark" 
                    href="{% if page_obj.has_next %}
                          ?{% if request.GET.cake_type %}cake_type={{ request.GET.cake_type }}&{% endif %}{% if request.GET.flavor %}flavor={{ request.GET.flavor }}&{% endif %}page={{ page_obj.next_page_number }}
                          {% else %}
@@ -91,4 +90,5 @@
         </ul>
     </nav>
 {% endif %}
+
 {% endblock %}
