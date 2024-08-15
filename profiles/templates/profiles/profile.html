@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Profile - {{ profile.user.username }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- Profile Header -->
+        <div id="title" class="col-12 text-center my-4">
+            <h2>My Profile</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- User Information Column -->
+        <div class="col-md-5 offset-md-1">
+            <hr>
+            <h2>User Information</h2>
+            <div class="mb-3">
+                {% if profile.image %}
+                <img src="{{ profile.image.url }}" alt="{{ profile.user.username }}'s profile image" class="img-fluid rounded-circle">
+                {% else %}
+                <img src="https://www.gravatar.com/avatar/?d=mm" alt="Default avatar" class="img-fluid rounded-circle">
+                {% endif %}
+            </div>
+            <ul class="user-list">
+                <li><strong>Username:</strong> {{ profile.user.username }}</li>
+                <li><strong>Email address:</strong> {{ profile.user.email }}</li>
+                <li><strong>Member since:</strong> {{ profile.user.date_joined|date:"d F, Y" }}</li>
+                {% if profile.bio %}
+                <li><strong>Bio:</strong> {{ profile.bio|safe }}</li>
+                {% endif %}
+            </ul>
+        </div>
+        
+        <!-- User Recipes Column -->
+        <div class="col-md-2 text-center">
+            <hr>
+            <h2>My Recent Recipes</h2>
+            {% if user_recipes %}
+            <div class="card mb-2">
+                {% for recipe in user_recipes %}
+                <div class="recipe-item mb-4">
+                    <a href="{% url 'recipe_detail' recipe.id %}" class="recipe-link">{{ recipe.title }}</a>
+                    <p>Posted on: {{ recipe.posted_date|date:'d M Y' }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>No recipes available.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
