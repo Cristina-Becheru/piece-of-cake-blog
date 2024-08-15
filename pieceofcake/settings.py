@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     
     'pieceofcakeapp',
     'recipes',
+    'profiles',
     
     
     
