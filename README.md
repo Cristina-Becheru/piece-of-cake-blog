@@ -227,3 +227,92 @@ The *Logout* page asks users for confirmation and provides a centrally placed "S
 - Git: Used for version control and collaboration.
 
 - Heroku: Platform for deploying and hosting the application.
+
+## Deployment
+### Getting Started
+1. Configure Environment Variables
+
+- Create a file named env.py in the root directory of your project.
+
+- Add your database URL, secret key, and Cloudinary URL to env.py.
+
+2. Update Django Settings
+
+- Import the variables from env.py into your settings.py.
+
+- Configure Django settings for your database, static files, and Cloudinary integration.
+
+3. Dependencies
+
+- Install required packages and update requirements.txt:
+
+- Run pip install django gunicorn cloudinary
+
+- Run pip freeze > requirements.txt
+
+4. Static Files Setup
+
+- Configure static file settings in settings.py.
+
+5. Create a Procfile
+
+- In the project root directory, create a Procfile with the content:web: gunicorn project_name.wsgi
+
+6. Integrate Cloudinary
+
+- Install Cloudinary and add it to INSTALLED_APPS in settings.py.
+
+7. Update Allowed Hosts
+
+- Modify ALLOWED_HOSTS in settings.py to include your Heroku app URL and other domains.
+
+8. Database Migrations
+
+- Run python manage.py makemigrations and python manage.py migrate.
+
+9. Production Settings
+
+- Set DEBUG to False in settings.py before pushing code to production.
+
+### Heroku Deployment
+1. Create a Heroku App
+
+- Sign up or log in to Heroku.
+
+2. Connect to GitHub
+
+- Go to the 'Deploy' tab on Heroku.
+- Choose 'GitHub' as the deployment method and link your repository.
+
+3. Configure Environment Variables on Heroku
+
+- Go to the 'Settings' tab on Heroku.
+- Click 'Reveal Config Vars' and add:
+-- DATABASE_URL
+-- SECRET_KEY
+-- CLOUDINARY_URL
+
+4. Set Buildpacks
+
+- Ensure the Heroku Python buildpack is added under 'Settings' > 'Buildpacks'.
+
+5. Deploy Your App
+
+- Select the branch you want to deploy (usually main) and click 'Deploy Branch'.
+
+6. View Your Live App
+
+- Access your application via the Heroku app URL.
+
+### Local Development
+
+#### Forking a repository
+- Log in to GitHub.
+- Navigate to the repository you wish to fork.
+- Click the 'Fork' button.
+
+#### Cloning a repository
+- Log in to GitHub.
+- Go to the repository you want to clone.
+- Click the 'Code' button and copy the URL.
+- Open your terminal, navigate to your desired directory, and run git clone <repository_url>.
