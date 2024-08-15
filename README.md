@@ -82,6 +82,13 @@ GITHUB PAGES
 - Discover New Recipes: Stay updated with the latest recipes added to the blog.
 - Submit New Recipes: Contribute new recipes to the blog, enriching the recipe collection with fresh content.
 
+#### Agile Methodology
+Agile methodology was utilized to iteratively develop and improve the recipe blog, enabling flexibility and responsiveness to changes.GitHub and its Project Board features were used for managing tasks and tracking progress.
+By applying Agile methodology, the development of the recipe blog becomes a structured yet flexible process, allowing for continuous improvement, responsiveness to user needs, and effective management of tasks and features.
+
+![UserStories](static/images/userstories.png)
+
+
 ## Design
 
 ### Colours Used
