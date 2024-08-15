@@ -1,131 +1,222 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Piece of Cake | Blog Recipe
 
-Welcome Cristina-Alexandra Becheru,
+![AmIResponsive](static/images/amiresponsive.png)
+# Introduction
+Welcome to the Piece of Cake blog recipe repository! 🎂
+Developed for Project Milestone 4 of the Code Institute Full-Stack Development Program, this blog is a full-stack Django project hosted on Heroku. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+It offers a delightful selection of cake recipes suitable for bakers of all skill levels. Users can comment, rate, and add their own recipes, while staff manage posts, categories, and comments from the frontend. 
+Built with HTML, CSS, JavaScript, and Python using Django, the site ensures a responsive and visually appealing experience on any device. 
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+LIVE SITE
 
-## Gitpod Reminders
+[You can view the live site here.](https://piece-of-cake-blog-5aad4b219313.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+GITHUB PAGES
 
-`python3 -m http.server`
+[You can view the GitHub code pages here.](https://github.com/Cristina-Becheru/piece-of-cake)
 
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
-
-### Connecting your Mongo database
-
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
 ---
 
-Happy coding!
+## TABLE OF CONTENT
+- [Introduction](#introduction)
+  - [User Experience (UX)](#user-experience-ux)
+      - [Client Goals](#client-goals)
+      - [First Time Visitor Goals](#first-time-visitor-goals)
+      - [Returning Visitor Goals](#returning-visitor-goals)
+      - [Frequent Visitor Goals](#frequent-visitor-goals)
+      - [Agile Methodology](#agile-methodology)
+  - [Design](#design)
+      - [Colours Used](#colours-used)
+      - [Typography](#typography)
+  - [Features](#features)
+      - [Home Page](#home-page)
+      - [Recipes](#recipes)
+      - [Add Recipes](#add-recipes)
+      - [Registration](#registration)
+      - [Login](#login)
+      - [Profile](#profile)
+      - [Logout](#logout)
+  - [Future Features](#future-features)
+  - [Technologies Used](#technologies-used)
+      - [Languages, Frameworks, Libraries \& Programs Used](#languages-frameworks-libraries--programs-used)
+  - [Deployment](#deployment)
+      - [Local Development](#local-development)
+          - [Forking a Repository](#forking-a-repository)
+          - [Cloning a Repository](#cloning-a-repository)
+  - [Testing](#testing)  
+  - [Credits](#credits)
+      - [Resources](#resources)
+      - [Content](#content)
+      - [Media](#media)
+
+  - [Acknowledgments](#acknowledgments)
+
+
+## User Experience (UX)
+
+  The "Piece of Cake" recipe blog offers an engaging and enjoyable experience for baking enthusiasts. With interactive features like comments, and the ability to submit your own creations, it invites users to actively participate and share their baking passion.
+
+#### Client Goals
+- Engage Users: Offer a rich and engaging experience where users can interact with and explore a variety of recipes.
+- Easy Navigation: Provide clear and intuitive navigation to help users find recipes, manage comments, and access their profiles effortlessly.
+- User Interaction: Allow users to see their own comments and recipes, edit or delete their own submissions, and upload a personal photo for a customized profile experience.
+- Comment Management: Ensure comments are immediately visible without moderation; users can edit or delete their own comments, and admins have the authority to remove any comment if needed.
+- Responsive Design: Deliver a smooth and accessible browsing experience across all devices, including mobile phones, tablets, and desktops, maintaining consistency and ease of use.
+#### First Time Visitor Goals
+- Explore Recipes: Discover a diverse range of cake recipes that are easy to follow and delicious to make.
+- Find a Recipe: Search for specific recipes based on ingredients or name of cakes
+- Read Reviews: View comments from other users to gain insights, tips, and feedback on various recipes.
+- Add Comments: Contribute personal thoughts or feedback on recipes by leaving comments.
+- View Added Recipes: Users can view and manage the recipes they have added to the blog after registration.
+- Learn More: Get to know more about the blog and its offerings through links to social media platforms.
+
+#### Returning Visitor Goals
+- Access Added Recipes: Log in to view and manage recipes they have previously added.
+- Add New Recipes: Submit new cake recipes or edit existing ones.
+- Edit or Delete Comments: Modify or remove their own comments if needed.
+- Track Recipe Ratings: View ratings and feedback on their recipes to see how others are responding.
+
+#### Frequent Visitor Goals
+- Discover New Recipes: Stay updated with the latest recipes added to the blog.
+- Submit New Recipes: Contribute new recipes to the blog, enriching the recipe collection with fresh content.
+
+## Design
+
+### Colours Used
+#### Header Colors
+
+- Navbar Background: -- The dark background of the navbar provides a high-contrast backdrop that makes the navigation links stand out.
+- Navbar Links: 
+            -- The default color for navigation links contrasts well against the dark navbar background.
+            -- When active or hovered over, the background color of the links changes to orange, while the text remains white for readability.
+
+- Navbar Toggler Button: -- The button used to toggle the navigation menu on mobile devices has a white background, ensuring visibility and ease of use.
+- Search Button: -- The search button in the form has a warning yellow color to attract attention and encourage user interaction.
+- Search Input Field:
+             -- The search input field has a white background to maintain a clean and accessible appearance.
+             -- The border color of the input field is light gray, providing a subtle distinction without overwhelming the design.
+
+![Piece of cake colour palette](static/images/headercolor%20.png)
+
+#### Footer Colors
+
+- The footer uses the same color scheme as the header, featuring a dark background with white text and orange hover effects for consistency. Additionally, it includes distinct colors for social media links: blue for Twitter, pink for Instagram , and standard color for GitHub.
+
+#### Other colors used
+- Text Color: (Dark Gray/Almost Black)
+This color is used for the main text throughout the website. It provides strong contrast against lighter backgrounds, ensuring readability and clarity.
+
+- Primary Button Color: (Pink)
+The primary button color is a vibrant pink. This color is used for key interactive elements such as call-to-action buttons, providing a visually appealing and engaging look.
+
+- Button Hover Color: (Light Pink)
+When users hover over buttons, the color changes to a softer light pink. This subtle color shift enhances user interaction feedback and adds a touch of elegance to the interface.
+
+- Border Color: (Light Gray)
+This light gray color is used for borders and lines to create subtle divisions and boundaries within the design. It helps to visually organize content without being overpowering.
+
+![Piece of cake colour palette](static/images/othercolors%20.png)
+
+### Typography
+
+- 'Mr Bedfort', cursive - This font is used for titles and headings to give them a distinctive, elegant cursive style.
+- 'Dancing Script', cursive - This font is applied to the main body text to provide a smooth and stylish cursive appearance, enhancing readability and aesthetic appeal.
+
+## Features
+
+#### Home Page
+The **Navbar** is consistently displayed across all pages of the website. It includes the following elements:
+
+*Logo*: Positioned on the left side of the Navbar for brand recognition.
+
+*Main Navigation*: Contains links to primary sections of the site, such as Home, Recipes, Add Recipe, and user-specific pages (Profile, Logout, Register, Login).
+
+*Search Bar*: Located on the right side of the Navbar, allowing users to quickly search through the site’s content.
+
+![NavBarLogin](static/images/navbar.png)
+
+![NavBarLogout](static/images/navlogout.png)
+
+ **Main Content** of the home page is divided into two primary sections: the *Introduction Section*, which welcomes users and invites them to browse recipes, and the *Featured Cakes Section*, which visually showcases popular recipes. Both sections are designed to be visually appealing and user-friendly, encouraging engagement with the site's content.
+
+![MainContent](static/images/maincontentone.png)
+
+![MainContent](static/images/maincont.png)
+
+**Footer** is designed to provide users with important links and information:
+
+*Social Media Links*: Quick access to my profiles on Facebook, Twitter, Instagram, and GitHub.
+
+*Copyright Notice*: Indicates content ownership and educational purpose.
+
+![Footer](static/images/footer.png)
+
+#### Recipes
+A dynamic, user-friendly page for browsing and filtering recipes. Key features include:
+
+*Title*: Prominently displays "Latest Recipes."
+*Filter Options*: Dropdowns to filter by cake type and flavor.
+*Recipes Grid*: A grid of cards with images, titles, and brief descriptions. Click to view details.
+*Pagination*: Navigate through pages while keeping filters applied.
+
+![Recipes](static/images/recipes.png)
+
+![Recipes](static/images/recipestwo.png)
+
+#### Add recipes
+The *Add Recipe* page enables authenticated users to submit new recipes to the application. For non-authenticated users, it displays a card with options to log in or sign up for an account.
+
+![AddRecipes](static/images/recipee.png)
+![AddRecipes](static/images/recip.png)
+![AddRecipes](static/images/recipecreate.png)
+
+#### Registration
+The *Sign Up* page provides a registration form for new users to create an account for the application. 
+The form includes fields for user information, and a prominent "Sign Up" button allows users to complete the registration process and gain access to the application’s features.Existing users can access a login link provided on the page.
+
+![Registration](static/images/signup.png)
+
+#### Login
+The *Login* page allows users to access their accounts with a secure login form.
+
+![Login](static/images/login.png)
+
+#### Profile 
+The *Profile* page shows user details and their own blog recipes. Users can view their profile information and see a list of their recipes with titles and posting dates. If no recipes are available, a message is displayed.
+
+![Profile](static/images/profile.png)
+
+#### Logout
+The *Logout* page asks users for confirmation and provides a centrally placed "Sign Out" button to complete the logout process.
+
+![Logout](static/images/logout.png)
+
+## Future features
+- Enable users to rate and review recipes, helping others make informed decisions.
+- Allow users to save and manage their favorite recipes for easy access and reference.
+- Provide video instructions for recipes to enhance user experience and engagement.
+- Enable sharing of recipes on social media platforms.
+- Allow users to edit and personalize their profiles, including updating personal information, profile pictures, and bios.
+- Allow users to recover or reset their passwords through email verification, ensuring secure access to their accounts.
+
+## Technologies used
+
+### Languages, Frameworks, Libraries & Programs Used
+
+- HTML & CSS: Used for the structure and styling of the website.
+
+- JavaScript: Provides interactive functionality.
+
+- Django: A Python web framework used for backend development.
+
+- Crispy Forms: Enhances the appearance and functionality of Django forms.
+
+- PostgreSQL: A powerful relational database used for storing data.
+
+- Cloudinary: Manages media storage and image handling.
+
+- Git: Used for version control and collaboration.
+
+- Heroku: Platform for deploying and hosting the application.
