@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from djrichtextfield.models import RichTextField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from cloudinary_storage.storage import MediaCloudinaryStorage
 from django_resized import ResizedImageField
 from django.utils.text import slugify
 
@@ -17,6 +18,7 @@ class Profile(models.Model):
         upload_to="profiles/",
         force_format="WEBP",
         blank=False,
+        storage=MediaCloudinaryStorage(),
     )
     bio = RichTextField(max_length=2500, null=True, blank=True)
     slug = models.SlugField(max_length=100, unique=True, blank=True, null=True)

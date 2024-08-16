@@ -41,6 +41,7 @@ GITHUB PAGES
   - [Future Features](#future-features)
   - [Technologies Used](#technologies-used)
       - [Languages, Frameworks, Libraries \& Programs Used](#languages-frameworks-libraries--programs-used)
+  - [Database](#database)
   - [Deployment](#deployment)
       - [Local Development](#local-development)
           - [Forking a Repository](#forking-a-repository)
@@ -227,6 +228,14 @@ The *Logout* page asks users for confirmation and provides a centrally placed "S
 - *Git*: Used for version control and collaboration.
 
 - *Heroku*: Platform for deploying and hosting the application.
+
+## Database Model
+The database model diagram for the recipe blog depicts the relationships between User, Profile, Recipe, and Comment. It illustrates how users manage profiles, create and interact with recipes, and leave comments.
+
+![Database](static/images/databasediagram.png)
+
+
+
 
 ## Deployment
 ### Getting Started
