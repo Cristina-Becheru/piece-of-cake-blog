@@ -49,9 +49,6 @@ GITHUB PAGES
   - [Testing](#testing)  
   - [Credits](#credits)
       - [Resources](#resources)
-      - [Content](#content)
-      - [Media](#media)
-
   - [Acknowledgments](#acknowledgments)
 
 
@@ -217,25 +214,40 @@ The *Logout* page asks users for confirmation and provides a centrally placed "S
 
 - *JavaScript*: Provides interactive functionality.
 
-- *Django*: A Python web framework used for backend development.
+- *Django*: Used for backend development.
 
 - *Crispy Forms*: Enhances the appearance and functionality of Django forms.
 
-- *PostgreSQL*: A powerful relational database used for storing data.
+- *PostgreSQL*: Used for storing data.
 
-- *Cloudinary*: Manages media storage and image handling.
+- *Bootstrap*: Used for developing responsive and visually appealing web interfaces.
+
+- *Cloudinary*: Manages my media storage.
 
 - *Git*: Used for version control and collaboration.
 
-- *Heroku*: Platform for deploying and hosting the application.
+- *Heroku*: Used for deploying and hosting the application.
+
+- *Google Fonts* : Used fonts to enhance typography.
+
+- *W3C Markup Validator*: Ensures HTML markup validity.
+
+- *W3C CSS Validator*: Validates my CSS code for correctness.
+
+- *Am I Responsive?*: Checks my website’s responsiveness across different devices.
+
+- *Lighthouse*: Used for auditing and improving the performance, accessibility, and best practices of my blog.
+
+- *ChatGPT*: Used for generating descriptions for recipes and comments.
+
+- *Lucid*: Used for creating my data models.
+
+- *VS Code*: Integrated development environment (IDE) used for coding.
 
 ## Database Model
 The database model diagram for the recipe blog depicts the relationships between User, Profile, Recipe, and Comment. It illustrates how users manage profiles, create and interact with recipes, and leave comments.
 
 ![Database](static/images/databasediagram.png)
-
-
-
 
 ## Deployment
 ### Getting Started
@@ -325,3 +337,26 @@ The database model diagram for the recipe blog depicts the relationships between
 - Go to the repository you want to clone.
 - Click the 'Code' button and copy the URL.
 - Open your terminal, navigate to your desired directory, and run git clone <repository_url>.
+
+## Credits
+
+### Resources
+- *Recipes and Images*: All recipes and images were sourced from [Liv for Cake](https://livforcake.com/)
+
+- The initial setup code for this project was adapted from the [Code Institute "I Think Therefore I Blog"](https://codeinstitute.net/) course.
+
+- *Tutorials*:
+  - [Building a Blog Application with Django](https://djangocentral.com/building-a-blog-application-with-django/)
+
+  - [Creating a Comments System with Django](https://djangocentral.com/creating-comments-system-with-django/)
+
+  - [Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
+
+  - [Complete Responsive Food website using HTML, CSS, Bootstrap and JavaScript](https://www.youtube.com/watch?v=ccNvJfonP3k&t=156s)
+
+  - *Stack Overflow*: Assisted in resolving various technical issues encountered during development.
+  
+## Acknowledgements
+- *Code Institute*: Provided essential resources and guidance that were fundamental in developing the project.
+
+- *Slack Community*: Offered invaluable support and feedback throughout the development process.
