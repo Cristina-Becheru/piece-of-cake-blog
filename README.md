@@ -59,28 +59,28 @@ GITHUB PAGES
   The "Piece of Cake" recipe blog offers an engaging and enjoyable experience for baking enthusiasts. With interactive features like comments, and the ability to submit your own creations, it invites users to actively participate and share their baking passion.
 
 #### Client Goals
-- Engage Users: Offer a rich and engaging experience where users can interact with and explore a variety of recipes.
-- Easy Navigation: Provide clear and intuitive navigation to help users find recipes, manage comments, and access their profiles effortlessly.
-- User Interaction: Allow users to see their own comments and recipes, edit or delete their own submissions, and upload a personal photo for a customized profile experience.
-- Comment Management: Ensure comments are immediately visible without moderation; users can edit or delete their own comments, and admins have the authority to remove any comment if needed.
-- Responsive Design: Deliver a smooth and accessible browsing experience across all devices, including mobile phones, tablets, and desktops, maintaining consistency and ease of use.
+- *Engage Users*: Offer a rich and engaging experience where users can interact with and explore a variety of recipes.
+- *Easy Navigation*: Provide clear and intuitive navigation to help users find recipes, manage comments, and access their profiles effortlessly.
+- *User Interaction*: Allow users to see their own comments and recipes, edit or delete their own submissions, and upload a personal photo for a customized profile experience.
+- *Comment Management*: Ensure comments are immediately visible without moderation; users can edit or delete their own comments, and admins have the authority to remove any comment if needed.
+- *Responsive Design*: Deliver a smooth and accessible browsing experience across all devices, including mobile phones, tablets, and desktops, maintaining consistency and ease of use.
 #### First Time Visitor Goals
-- Explore Recipes: Discover a diverse range of cake recipes that are easy to follow and delicious to make.
-- Find a Recipe: Search for specific recipes based on ingredients or name of cakes
-- Read Reviews: View comments from other users to gain insights, tips, and feedback on various recipes.
-- Add Comments: Contribute personal thoughts or feedback on recipes by leaving comments.
-- View Added Recipes: Users can view and manage the recipes they have added to the blog after registration.
-- Learn More: Get to know more about the blog and its offerings through links to social media platforms.
+- *Explore Recipes*: Discover a diverse range of cake recipes that are easy to follow and delicious to make.
+- *Find a Recipe*: Search for specific recipes based on ingredients or name of cakes
+- *Read Reviews*: View comments from other users to gain insights, tips, and feedback on various recipes.
+- *Add Comments*: Contribute personal thoughts or feedback on recipes by leaving comments.
+- *View Added Recipes*: Users can view and manage the recipes they have added to the blog after registration.
+- *Learn More*: Get to know more about the blog and its offerings through links to social media platforms.
 
 #### Returning Visitor Goals
-- Access Added Recipes: Log in to view and manage recipes they have previously added.
-- Add New Recipes: Submit new cake recipes or edit existing ones.
-- Edit or Delete Comments: Modify or remove their own comments if needed.
-- Track Recipe Ratings: View ratings and feedback on their recipes to see how others are responding.
+- *Access Added Recipes*: Log in to view and manage recipes they have previously added.
+- *Add New Recipes*: Submit new cake recipes or edit existing ones.
+- *Edit or Delete Comments*: Modify or remove their own comments if needed.
+- *Track Recipe Ratings*: View ratings and feedback on their recipes to see how others are responding.
 
 #### Frequent Visitor Goals
-- Discover New Recipes: Stay updated with the latest recipes added to the blog.
-- Submit New Recipes: Contribute new recipes to the blog, enriching the recipe collection with fresh content.
+- *Discover New Recipes*: Stay updated with the latest recipes added to the blog.
+- *Submit New Recipes*: Contribute new recipes to the blog, enriching the recipe collection with fresh content.
 
 #### Agile Methodology
 Agile methodology was utilized to iteratively develop and improve the recipe blog, enabling flexibility and responsiveness to changes.GitHub and its Project Board features were used for managing tasks and tracking progress.
@@ -94,14 +94,14 @@ By applying Agile methodology, the development of the recipe blog becomes a stru
 ### Colours Used
 #### Header Colors
 
-- Navbar Background: -- The dark background of the navbar provides a high-contrast backdrop that makes the navigation links stand out.
-- Navbar Links: 
+- *Navbar Background*: -- The dark background of the navbar provides a high-contrast backdrop that makes the navigation links stand out.
+- *Navbar Links*: 
             -- The default color for navigation links contrasts well against the dark navbar background.
-            -- When active or hovered over, the background color of the links changes to orange, while the text remains white for readability.
+            -- When hovered over, the background color of the links changes to orange, while the text remains white for readability.
 
-- Navbar Toggler Button: -- The button used to toggle the navigation menu on mobile devices has a white background, ensuring visibility and ease of use.
-- Search Button: -- The search button in the form has a warning yellow color to attract attention and encourage user interaction.
-- Search Input Field:
+- *Navbar Toggler Button*: -- The button used to toggle the navigation menu on mobile devices has a white background, ensuring visibility and ease of use.
+- *Search Button*: -- The search button in the form has a warning yellow color to attract attention and encourage user interaction.
+- *Search Input Field*:
              -- The search input field has a white background to maintain a clean and accessible appearance.
              -- The border color of the input field is light gray, providing a subtle distinction without overwhelming the design.
 
@@ -112,24 +112,24 @@ By applying Agile methodology, the development of the recipe blog becomes a stru
 - The footer uses the same color scheme as the header, featuring a dark background with white text and orange hover effects for consistency. Additionally, it includes distinct colors for social media links: blue for Twitter, pink for Instagram , and standard color for GitHub.
 
 #### Other colors used
-- Text Color: (Dark Gray/Almost Black)
+- *Text Color*: (Dark Gray/Almost Black)
 This color is used for the main text throughout the website. It provides strong contrast against lighter backgrounds, ensuring readability and clarity.
 
-- Primary Button Color: (Pink)
+- *Primary Button Color*: (Pink)
 The primary button color is a vibrant pink. This color is used for key interactive elements such as call-to-action buttons, providing a visually appealing and engaging look.
 
-- Button Hover Color: (Light Pink)
+- *Button Hover Color*: (Light Pink)
 When users hover over buttons, the color changes to a softer light pink. This subtle color shift enhances user interaction feedback and adds a touch of elegance to the interface.
 
-- Border Color: (Light Gray)
+- *Border Color*: (Light Gray)
 This light gray color is used for borders and lines to create subtle divisions and boundaries within the design. It helps to visually organize content without being overpowering.
 
 ![Piece of cake colour palette](static/images/othercolors%20.png)
 
 ### Typography
 
-- 'Mr Bedfort', cursive - This font is used for titles and headings to give them a distinctive, elegant cursive style.
-- 'Dancing Script', cursive - This font is applied to the main body text to provide a smooth and stylish cursive appearance, enhancing readability and aesthetic appeal.
+- *'Mr Bedfort', cursive* - This font is used for titles and headings to give them a distinctive, elegant cursive style.
+- *'Dancing Script', cursive* - This font is applied to the main body text to provide a smooth and stylish cursive appearance, enhancing readability and aesthetic appeal.
 
 ## Features
 
@@ -212,21 +212,21 @@ The *Logout* page asks users for confirmation and provides a centrally placed "S
 
 ### Languages, Frameworks, Libraries & Programs Used
 
-- HTML & CSS: Used for the structure and styling of the website.
+- *HTML & CSS*: Used for the structure and styling of the website.
 
-- JavaScript: Provides interactive functionality.
+- *JavaScript*: Provides interactive functionality.
 
-- Django: A Python web framework used for backend development.
+- *Django*: A Python web framework used for backend development.
 
-- Crispy Forms: Enhances the appearance and functionality of Django forms.
+- *Crispy Forms*: Enhances the appearance and functionality of Django forms.
 
-- PostgreSQL: A powerful relational database used for storing data.
+- *PostgreSQL*: A powerful relational database used for storing data.
 
-- Cloudinary: Manages media storage and image handling.
+- *Cloudinary*: Manages media storage and image handling.
 
-- Git: Used for version control and collaboration.
+- *Git*: Used for version control and collaboration.
 
-- Heroku: Platform for deploying and hosting the application.
+- *Heroku*: Platform for deploying and hosting the application.
 
 ## Deployment
 ### Getting Started
@@ -288,9 +288,9 @@ The *Logout* page asks users for confirmation and provides a centrally placed "S
 
 - Go to the 'Settings' tab on Heroku.
 - Click 'Reveal Config Vars' and add:
--- DATABASE_URL
--- SECRET_KEY
--- CLOUDINARY_URL
+-- *DATABASE_URL*
+-- *SECRET_KEY*
+-- *CLOUDINARY_URL*
 
 4. Set Buildpacks
 
