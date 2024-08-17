@@ -212,8 +212,6 @@ The *Logout* page asks users for confirmation and provides a centrally placed "S
 
 - *HTML & CSS*: Used for the structure and styling of the website.
 
-- *JavaScript*: Provides interactive functionality.
-
 - *Django*: Used for backend development.
 
 - *Crispy Forms*: Enhances the appearance and functionality of Django forms.
