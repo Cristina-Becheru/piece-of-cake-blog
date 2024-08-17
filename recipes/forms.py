@@ -6,7 +6,7 @@ from django import forms
 from djrichtextfield.widgets import (
     RichTextWidget,
 )
-from .models import Recipe
+
 
 
 class RecipeForm(forms.ModelForm):
