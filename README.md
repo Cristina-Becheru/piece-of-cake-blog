@@ -336,6 +336,13 @@ The database model diagram for the recipe blog depicts the relationships between
 - Click the 'Code' button and copy the URL.
 - Open your terminal, navigate to your desired directory, and run git clone <repository_url>.
 
+## Testing
+The site was thoroughly tested during development, with immediate fixes applied to resolve any issues.
+
+Details of testing and bug resolutions are documented in the file below.
+
+[TESTING.md file](TESTING.md)
+
 ## Credits
 
 ### Resources

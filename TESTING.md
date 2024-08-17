@@ -11,7 +11,6 @@ LIVE SITE
 - [Code Validation](#code-validation)
     - [HTML](#html)
     - [CSS](#css)
-    - [Python](#python)
 - [Browser Compatibility](#browser-compatibility)
 - [Lighthouse](#lighthouse)
 - [Manual Testing](#manual-testing)
@@ -24,6 +23,20 @@ The test results from Django’s built-in framework confirm that all major funct
 ![Test](static/images/tests.png)
 
 ## Code Validation
+### HTML
+The HTML code was validated using the W3C Markup Validation Service. The validation results revealed two errors, all of which have been resolved.
+
+![HTML](static/images/homecheck.png)
+
+![HTML](static/images/noerrorscheck.png)
+
+The remaining pages were reviewed and showed no errors, ensuring overall compliance with HTML standards.
+
+![HTML](static/images/signupcheck.png)
+
+![HTML](static/images/logincheck.png)
+
+![HTML](static/images/profilecheck.png)
 
 ### CSS
 ![CSS](static/images/css.png)
