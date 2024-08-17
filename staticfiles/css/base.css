@@ -269,6 +269,22 @@ header {
     border-color: var(--pink); 
 }
 
+/* Styling for the pagination */
+
+.pagination {
+    display: inline-block; 
+}
+
+.step-links {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.pagination-container {
+    text-align: center;
+    margin: 20px 0; 
+}
+
 /* Base styles for home page */
 
 .intro-section p {
@@ -277,6 +293,7 @@ header {
     margin-top: 1rem; 
     margin-bottom: 1rem; 
 }
+
 .main-title {
     font-size: 3rem;
     font-weight: bold;
@@ -441,7 +458,7 @@ header {
     }
 
     .btn-primary {
-        padding: 8px 15px; /
+        padding: 8px 15px; 
     }
 }
 

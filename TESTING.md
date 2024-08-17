@@ -23,6 +23,12 @@ The test results from Django’s built-in framework confirm that all major funct
 
 ![Test](static/images/tests.png)
 
+## Code Validation
+
+### CSS
+![CSS](static/images/css.png)
+
+
 ## Browser Compatibility
 
 Ensuring that the "Piece of Cake" recipe blog functions seamlessly across various browsers is crucial for delivering a consistent user experience. Below is a detailed account of how the website performs on different web browsers:
