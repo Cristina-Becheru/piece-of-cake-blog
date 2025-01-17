@@ -14,7 +14,7 @@ LIVE SITE
 
 GITHUB PAGES
 
-[You can view the GitHub code pages here.](https://github.com/Cristina-Becheru/piece-of-cake)
+[You can view the GitHub code pages here.](https://github.com/Cristina-Becheru/piece-of-cake-blog.git))
 
 
 ---
